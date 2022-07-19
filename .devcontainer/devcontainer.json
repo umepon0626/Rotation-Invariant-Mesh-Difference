@@ -1,0 +1,29 @@
+{
+  "name": "C++",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "cpp",
+  "workspaceFolder": "/work",
+  "extensions": [
+    "ms-python.python",
+    "streetsidesoftware.code-spell-checker"
+  ],
+  "remoteUser": "root",
+  "settings": {
+    "python.pythonPath": "/usr/bin/python3",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+      "--ignore=E402,E501"
+    ],
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+      "--ignore",
+      "E402,E501",
+      "--max-line-length",
+      "150"
+    ],
+    "[python]": {
+      "editor.formatOnSave": true
+    }
+  }
+}
